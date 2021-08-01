@@ -1,0 +1,15 @@
+mutation CreateComment(
+  $comment: CommentInput!
+  $attachToId: MongoID!
+  $attachToType: ThreadsEnum!
+) {
+  commentCreate(
+    record: $comment
+    attachToId: $attachToId
+    attachToType: $attachToType
+  ) {
+    record {
+      _id
+    }
+  }
+}

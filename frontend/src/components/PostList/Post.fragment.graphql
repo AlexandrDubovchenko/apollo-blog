@@ -1,0 +1,10 @@
+fragment PostFragment on Post {
+  _id
+  author
+  title
+  body
+  date
+  comments {
+    _id
+  }
+}

@@ -1,0 +1,7 @@
+mutation CreatePost($title: String!, $body: String) {
+  postCreateOne(record: { title: $title, body: $body }) {
+    record {
+      ...PostFragment
+    }
+  }
+}

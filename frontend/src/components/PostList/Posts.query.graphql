@@ -1,0 +1,5 @@
+query GetPosts {
+  postMany(sort: _ID_DESC) {
+    ...PostFragment
+  }
+}

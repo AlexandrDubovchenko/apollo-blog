@@ -1,0 +1,5 @@
+subscription commentCreated($id: ID!) {
+  commentCreated(id: $id) {
+    ...CommentFragment
+  }
+}

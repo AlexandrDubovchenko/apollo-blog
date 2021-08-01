@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": "airbnb-typescript-prettier",
+  "rules": {
+    "no-console": 1,
+    "@typescript-eslint/no-unused-vars": 1,
+    "react/react-in-jsx-scope": 0,
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": 0,
+    "no-underscore-dangle": 0
+  },
+  "ignorePatterns": ["**/generated/*.ts"]
+}

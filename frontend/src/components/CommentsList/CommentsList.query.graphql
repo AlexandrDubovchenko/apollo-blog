@@ -1,0 +1,8 @@
+query GetComments($ids: [MongoID!], $attachedToId: MongoID!) {
+  commentMany(
+    filter: { _operators: { _id: { in: $ids } }, attachedToId: $attachedToId }
+    sort: _ID_DESC
+  ) {
+    ...CommentFragment
+  }
+}

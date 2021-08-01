@@ -1,0 +1,39 @@
+{
+  "name": "graphql-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "npm-run-all --parallel nodemon build",
+    "nodemon": "nodemon --watch build --exec \"node build/bundle.js\"",
+    "build": "webpack --config webpack.server.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo": "^2.33.4",
+    "apollo-server": "^2.25.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "google-auth-library": "^7.3.0",
+    "googleapis": "^81.0.0",
+    "graphql": "^15.5.0",
+    "graphql-compose": "^9.0.1",
+    "graphql-compose-mongoose": "^9.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}

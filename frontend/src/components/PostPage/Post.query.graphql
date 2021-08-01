@@ -1,0 +1,5 @@
+query Post($id: MongoID!) {
+  postById(_id: $id) {
+    ...PostFragment
+  }
+}

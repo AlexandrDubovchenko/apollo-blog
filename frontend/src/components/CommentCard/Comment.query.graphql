@@ -1,0 +1,5 @@
+query GetCommentById($id: MongoID!) {
+  commentById(_id: $id) {
+    ...CommentFragment
+  }
+}

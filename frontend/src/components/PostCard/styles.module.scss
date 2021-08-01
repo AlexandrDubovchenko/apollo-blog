@@ -1,0 +1,38 @@
+.root {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #adb3ba;
+  border-radius: 8px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 10px 4px;
+  & span {
+    margin: 10px 0;
+  }
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.down {
+  transform: rotate(180deg);
+}
+
+.main {
+  padding: 10px;
+}
+
+.header {
+  color: #787c7e;
+}
+
+.body {
+  color: #1a1a1b;
+}
+
+.title {
+  font-size: 18px;
+}

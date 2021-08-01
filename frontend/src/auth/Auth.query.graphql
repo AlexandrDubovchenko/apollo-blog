@@ -1,0 +1,6 @@
+query GetUser($accessToken: String!) {
+  getUser(accessToken: $accessToken) {
+    _id
+    email
+  }
+}

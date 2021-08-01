@@ -1,0 +1,15 @@
+.root {
+  background-color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 600px;
+
+  & > div:first-child {
+    border: none;
+    width: 100%;
+  }
+}
+
+.form {
+  margin-top: 50px;
+}
